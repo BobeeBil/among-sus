@@ -1,7 +1,7 @@
 from numpy import random
 
 code = ""
-word = ""
+word = "" # AAEACDBB or AAAFCDBB
 sus = False
 l1 = ["", "b", "g", "ch", "sh"]
 t1 = ["A", "B", "C", "D", "E"]
@@ -67,7 +67,7 @@ if c3 == "A":
 elif c3 == "B":
     c5a = 0.15; c5i = 0.35; c5o = 0.15; c5u = 0.35
 elif c3 == "C":
-    c5a = 0.15; c5i = 0.12; c5o = 0.3; c5u = 0.35
+    c5a = 0.15; c5i = 0.2; c5o = 0.3; c5u = 0.35
 elif c3 == "D":
     c5a = 0.3; c5i = 0.3; c5o = 0.0; c5u = 0.4
 elif c3 == "E":

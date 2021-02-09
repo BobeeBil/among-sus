@@ -1,9 +1,5 @@
 from numpy import random
 
-CODE = input("INPUT CODE: ")
-c1, c2, c3, c4 = CODE[0], CODE[1], CODE[2], CODE[3]
-c5, c6, c7, c8 = CODE[4], CODE[5], CODE[6], CODE[7]
-word = ""
 sus = False
 l1 = ["", "b", "g", "ch", "sh"]
 t1 = ["A", "B", "C", "D", "E"]
@@ -24,15 +20,21 @@ t7 = ["A", "B"]
 l8 = ["o", "u", "ou"]
 t8 = ["A", "B", "C"]
 
-letters = [l1, l2, l3, l4, l5, l6, l7, l8]
-types = [t1, t2, t3, t4, t5, t6, t7, t8]
-codes = [c1, c2, c3, c4, c5, c6, c7, c8]
+while True:
+    word = ""
+    CODE = input("INPUT CODE: ")
+    c1, c2, c3, c4 = CODE[0], CODE[1], CODE[2], CODE[3]
+    c5, c6, c7, c8 = CODE[4], CODE[5], CODE[6], CODE[7]
 
-for l in letters:
-    word += l[types[letters.index(l)].index(codes[letters.index(l)])]
-    if letters.index(l) == 5 and sus == True:
-        word += "s"
-word += "s"
+    letters = [l1, l2, l3, l4, l5, l6, l7, l8]
+    types = [t1, t2, t3, t4, t5, t6, t7, t8]
+    codes = [c1, c2, c3, c4, c5, c6, c7, c8]
 
-print(word)
-print()
+    for l in letters:
+        word += l[types[letters.index(l)].index(codes[letters.index(l)])]
+        if letters.index(l) == 5 and sus == True:
+            word += "s"
+    word += "s"
+
+    print(word)
+    print()
