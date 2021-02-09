@@ -22,7 +22,10 @@ t8 = ["A", "B", "C"]
 
 while True:
     word = ""
-    CODE = input("INPUT CODE: ")
+    try:
+        CODE = input("INPUT CODE: ")
+    except EOFError:
+        continue
     c1, c2, c3, c4 = CODE[0], CODE[1], CODE[2], CODE[3]
     c5, c6, c7, c8 = CODE[4], CODE[5], CODE[6], CODE[7]
 
