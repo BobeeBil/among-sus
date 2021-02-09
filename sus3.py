@@ -96,26 +96,16 @@ if random.choice([1, 2, 3]) == 1 and c7 == "B":
     sus = True
 
 if c7 == "B":
-    c8o = 0.0
-    c8u = 1.0
-    c8ou = 0.0
+    c8o = 0.0; c8u = 1.0; c8ou = 0.0
 else:
     if c6 == "A":
-        c8o = 0.3
-        c8u = 0.4
-        c8ou = 0.3
+        c8o = 0.3; c8u = 0.4; c8ou = 0.3
     elif c6 == "B":
-        c8o = 0.3
-        c8u = 0.5
-        c8ou = 0.2
+        c8o = 0.3; c8u = 0.5; c8ou = 0.2
     elif c6 == "C":
-        c8o = 0.1
-        c8u = 0.5
-        c8ou = 0.4
+        c8o = 0.1; c8u = 0.5; c8ou = 0.4
     if c6 == "D":
-        c8o = 0.2
-        c8u = 0.7
-        c8ou = 0.1
+        c8o = 0.2; c8u = 0.7; c8ou = 0.1
 c8 = random.choice(t8, p=[c8o, c8u, c8ou])
 
 
