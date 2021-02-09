@@ -116,12 +116,18 @@ codes = [c1, c2, c3, c4, c5, c6, c7, c8]
 
 for l in letters:
     word += l[types[letters.index(l)].index(codes[letters.index(l)])]
-    if letters.index(l) == 5 and sus == True:
+    if letters.index(l) == 6 and sus == True:
         word += "s"
 word += "s"
 
 for c in codes:
     code += c
+if sus == True:
+    code += "-B"
+else:
+    code += "-A"
+
+
 print()
 print(code)
 print(word)
