@@ -1,6 +1,5 @@
 from numpy import random
 
-sus = False
 l1 = ["", "b", "g", "ch", "sh"]
 t1 = ["A", "B", "C", "D", "E"]
 l2 = ["a", "o"]
@@ -21,6 +20,7 @@ l8 = ["o", "u", "ou"]
 t8 = ["A", "B", "C"]
 
 while True:
+    sus = False
     try:
         word = ""
         try:
