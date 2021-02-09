@@ -1,2 +1,2 @@
 # among sus
-https://www.tutorialspoint.com/execute_python_online.php
+# https://trinket.io/embed/python3/a5bd54189b
